@@ -12,6 +12,7 @@ Este projeto foi desenvolvido para atender ao desafio proposto de realizar a ing
 
 O projeto é organizado da seguinte maneira:
 
+```bash
 desafio-capitani-01/
 ├── src/
 │   ├── init.py         # Arquivo de inicialização do pacote
@@ -30,6 +31,7 @@ desafio-capitani-01/
 │   ├── test_logger.py      # Testes para o módulo de logging
 ├── README.md               # Documentação do projeto
 ├── requirements.txt        # Dependências do projeto
+```
 
 ### Descrição dos Arquivos
 
