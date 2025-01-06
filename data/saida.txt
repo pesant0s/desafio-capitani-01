@@ -1,3 +1,0 @@
-Top 5 Pedidos por Valor Total:
-Número do Pedido | Valor Total
-------------------------------

@@ -49,18 +49,6 @@ desafio-capitani-01/
 
 Certifique-se de que o Python 3.8 ou superior esteja instalado no seu sistema. Caso não tenh o Python instalado, [faça o download aqui](https://www.python.org/downloads/)
 
-### Modelo de dados de entrada para usar
-
-```bash
-0000000123010000001500
-0000000124010000002000
-0000000125010000003000
-0000000126010000005000
-0000000127010000004500
-0000000128010000001000
-0000000129010000008000
-```
-
 ### 1. Instalar Dependências
 
 Clone o repositório e instale as dependências necessárias executando os seguintes comandos:
@@ -73,10 +61,24 @@ pip install -r requirements.txt
 
 ### 2. Configuração dos Arquivos de Entrada e Saída
 
-• O arquivo de entrada entrada.txt deve ser colocado na pasta data/ e deve seguir o formato posicional descrito nos requisitos.
-• O arquivo de saída saida.txt será gerado automaticamente na pasta data/ após a execução do programa.
+- O arquivo de entrada entrada.txt deve ser colocado na pasta data/ e deve seguir o formato posicional descrito nos requisitos.
+- O arquivo de saída saida.txt será gerado automaticamente na pasta data/ após a execução do programa.
 
 ### 3. Executar o Sistema
+
+No repositório do git, já existe um arquivo em data/entrada.txt com um modelo de dados. Caso seja necessário testar com outro modelo, basta substituir os dados dentro do arquivo.
+
+Modelo de dados de entrada para usar
+
+```bash
+0000000123010000001500
+0000000124010000002000
+0000000125010000003000
+0000000126010000005000
+0000000127010000004500
+0000000128010000001000
+0000000129010000008000
+```
 
 Execute o programa principal com o comando:
 
@@ -85,12 +87,15 @@ python src/main.py
 ```
 
 Esse comando irá:
+
 1. Ler o arquivo entrada.txt localizado na pasta data/.
 2. Calcular o valor total dos pedidos.
 3. Gerar um relatório com os 5 pedidos de maior valor total e salvá-lo no arquivo saida.txt.
 4. Exemplos de Arquivos
     • Entrada (entrada.txt): Este arquivo contém os dados dos pedidos no formato posicional, conforme o especificado nos requisitos do desafio.
     • Saída (saida.txt): O relatório gerado, contendo os 5 pedidos de maior valor total, será salvo neste arquivo.
+
+Após a execução do programa, não será exibido nada no terminal. Necessário abrir a pasta de logs/ e verificar o ultimo log gerado com base na data e hora atual.
 
 ## Decisões de Projeto
 
@@ -108,15 +113,15 @@ O sistema de logs foi implementado para registrar as execuções e facilitar o d
 
 ## Desafios Enfrentados
 
-    • Leitura de Arquivo Posicional: A interpretação correta dos dados posicionais exigiu atenção ao alinhamento de colunas e ao tratamento de preenchimento com zeros.
-    • Cálculo de Valor Total: Garantir a precisão no cálculo e o formato correto para o valor total de cada pedido foi uma parte crucial do processo.
-    • Desempenho ao Processar Grandes Arquivos: A aplicação foi projetada para ser eficiente, mesmo quando o arquivo de entrada contiver um grande número de pedidos.
+Leitura de Arquivo Posicional: A interpretação correta dos dados posicionais exigiu atenção ao alinhamento de colunas e ao tratamento de preenchimento com zeros.
+Cálculo de Valor Total: Garantir a precisão no cálculo e o formato correto para o valor total de cada pedido foi uma parte crucial do processo.
+Desempenho ao Processar Grandes Arquivos: A aplicação foi projetada para ser eficiente, mesmo quando o arquivo de entrada contiver um grande número de pedidos.
 
 ## Possíveis Melhorias Futuras
 
-    • Validação dos Dados: Implementar validações mais robustas para garantir a integridade dos dados de entrada, como verificar se os campos estão dentro dos limites esperados.
-    • Geração de Relatórios em Formatos Diversos: Permitir a geração de relatórios em formatos como CSV ou PDF.
-    • Otimização de Desempenho: Para arquivos muito grandes, pode ser interessante implementar um processamento assíncrono ou em lote para melhorar a escalabilidade.
+Validação dos Dados: Implementar validações mais robustas para garantir a integridade dos dados de entrada, como verificar se os campos estão dentro dos limites esperados.
+Geração de Relatórios em Formatos Diversos: Permitir a geração de relatórios em formatos como CSV ou PDF.
+Otimização de Desempenho: Para arquivos muito grandes, pode ser interessante implementar um processamento assíncrono ou em lote para melhorar a escalabilidade.
 
 ## Testes
 
