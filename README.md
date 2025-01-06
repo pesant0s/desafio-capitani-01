@@ -49,6 +49,18 @@ desafio-capitani-01/
 
 Certifique-se de que o Python 3.8 ou superior esteja instalado no seu sistema. Caso não tenh o Python instalado, [faça o download aqui](https://www.python.org/downloads/)
 
+### Modelo de dados de entrada para usar
+
+```bash
+0000000123010000001500
+0000000124010000002000
+0000000125010000003000
+0000000126010000005000
+0000000127010000004500
+0000000128010000001000
+0000000129010000008000
+```
+
 ### 1. Instalar Dependências
 
 Clone o repositório e instale as dependências necessárias executando os seguintes comandos:
@@ -73,12 +85,12 @@ python src/main.py
 ```
 
 Esse comando irá:
-    1. Ler o arquivo entrada.txt localizado na pasta data/.
-    2. Calcular o valor total dos pedidos.
-    3. Gerar um relatório com os 5 pedidos de maior valor total e salvá-lo no arquivo saida.txt.
-    4. Exemplos de Arquivos
-        • Entrada (entrada.txt): Este arquivo contém os dados dos pedidos no formato posicional, conforme o especificado nos requisitos do desafio.
-        • Saída (saida.txt): O relatório gerado, contendo os 5 pedidos de maior valor total, será salvo neste arquivo.
+1. Ler o arquivo entrada.txt localizado na pasta data/.
+2. Calcular o valor total dos pedidos.
+3. Gerar um relatório com os 5 pedidos de maior valor total e salvá-lo no arquivo saida.txt.
+4. Exemplos de Arquivos
+    • Entrada (entrada.txt): Este arquivo contém os dados dos pedidos no formato posicional, conforme o especificado nos requisitos do desafio.
+    • Saída (saida.txt): O relatório gerado, contendo os 5 pedidos de maior valor total, será salvo neste arquivo.
 
 ## Decisões de Projeto
 
