@@ -121,7 +121,8 @@ Desempenho ao Processar Grandes Arquivos: A aplicação foi projetada para ser e
 
 Validação dos Dados: Implementar validações mais robustas para garantir a integridade dos dados de entrada, como verificar se os campos estão dentro dos limites esperados.
 Geração de Relatórios em Formatos Diversos: Permitir a geração de relatórios em formatos como CSV ou PDF.
-Otimização de Desempenho: Para arquivos muito grandes, pode ser interessante implementar um processamento assíncrono ou em lote para melhorar a escalabilidade.
+Otimização de Desempenho: Para arquivos muito grandes, pode ser interessante implementar um processamento assíncrono ou em lote para melhorar a escalabilidade. Dependendo da quantidade de arquivo e o quão requisitado será, talvez adaptar a solução usando a linguagem Go ou adicionar bibliotecas mais robustas como o Apache Spark.
+Interface de Usuario: Desenvolver uma interface de usuário para facilitar o uso da aplicação, permitindo que os usuários possam carregar arquivos de entrada e visualizar os relatórios gerados.
 
 ## Testes
 
